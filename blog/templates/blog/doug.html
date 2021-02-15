@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+<!-- 
+    --- DATA IS PASSED TO AN HTML TEMPLATE THROUGH THE CONTEXT PARAMETER ---
+    context = {
+    'title': 'Doug',
+    'name': 'Doug Sherlock',
+    'animal': 'Wombat',
+} -->
+{% block content %}
+<div>
+    <div><h2>This is Doug's personal view.</h2></div>
+    <div><h3>Name: {{ name }}</h3></div>
+    <div><h3>Animal: {{ animal }}</h3></div>
+</div>
+{% endblock content %}
